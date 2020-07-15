@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  var name= "Isabel"
+  var presentation = <h2>Hello, I'm {name}</h2>
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        {presentation}
         <a
           className="App-link"
           href="https://reactjs.org"

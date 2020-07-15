@@ -1,7 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './Assets/imags/logo.svg';
+import './Assets/css/App.css'
 
+//components
+
+import MyFirstComponent from './Components/MyFirstComponent';
 
 function HolaMundo(name,age){
    var pres= (<div><h1>Hello, I'm {name}</h1>
@@ -21,14 +24,10 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         {HolaMundo(name,age)}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+     
+        <section className="componentes">
+          <MyFirstComponent></MyFirstComponent>
+        </section>
       </header>
     </div>
   );

@@ -2,9 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+function HolaMundo(name,age){
+   var pres= (<div><h1>Hello, I'm {name}</h1>
+   <h2>And I'm {age} years old</h2></div>)
+
+return pres;
+}
+
 function App() {
   var name= "Isabel"
-  var presentation = <h2>Hello, I'm {name}</h2>
+  var age=26
   return (
     <div className="App">
       <header className="App-header">
@@ -12,7 +20,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        {presentation}
+        {HolaMundo(name,age)}
         <a
           className="App-link"
           href="https://reactjs.org"

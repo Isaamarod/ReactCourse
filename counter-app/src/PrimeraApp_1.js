@@ -1,14 +1,10 @@
 //Los componentes tienen la primera letra capitalizada
 //I'll work in FUNCTIONAL COMPONENTS
-//Event click
  import React from 'react';
-const PrimeraApp = ({value}) =>{
+const PrimeraApp = () =>{
 
-    return(
-    <> 
-    <h1>Hola Mundo</h1>
-    <h2>{value}</h2>
-    </>)
+    return <h1>Hola Mundo</h1>;
+
  }
 
 
